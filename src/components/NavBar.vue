@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row justify-between">
-    <rbm-logo-title class="h-44 w-44 ml-6 -mt-4"/>
+    <rbm-logo-title class="h-32 w-32 ml-6 -mt-4"/>
     <!--  Mobile navigation  -->
     <div v-if="!hideNav" class="p-5 xl:hidden">
       <svg xmlns="http://www.w3.org/2000/svg"
@@ -42,23 +42,23 @@
       </div>
     </div>
     <!--  Desktop navigation  -->
-    <div class="xl:flex flex-col w-4/12 hidden">
+    <div class="xl:flex flex-col hidden">
       <ul class="flex xl:flex-row pl-4 py-4 pr-2">
         <li class="text-white text-2xl border-b-4 border-white text-center self-center select-none
-                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer my-2 w-8/12 self-end">
+                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer my-2 w-52 self-end">
           Web Development
         </li>
         <li class="text-white text-2xl border-b-4 border-white text-center self-center select-none
-                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-5/12 my-2 self-end">
+                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-32 my-2 self-end">
           Freelancing
         </li>
         <li @click="toggleContact"
             class="text-white text-2xl border-b-4 border-white text-center self-center select-none
-                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-5/12 my-2 self-end">
+                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-32 my-2 self-end">
           Contact Us
         </li>
       </ul>
-      <div class="flex flex-row justify-end self-end w-3/12 mx-5" v-if="hideContact">
+      <div class="flex flex-row justify-end self-end mx-5" v-if="hideContact">
         <EnvelopeIcon class="mx-1 h-6 w-6"/>
         <TwitterIcon class="mx-1 h-6 w-6"/>
         <LinkedinIcon class="mx-1 h-6 w-6"/>
