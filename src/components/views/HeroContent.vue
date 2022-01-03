@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center place-items-center h-3/6">
+  <div class="flex justify-center place-items-center h-3/6 mt-24">
     <div>
       <h1 class="text-5xl font-bold text-white">Welcome to Red Banner Media</h1>
       <span class="text-3xl font-bold">Home for Professional <span class="text-rbm-red">web development</span>, and full stack <span
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "MainContent"
+  name: "HeroContent"
 }
 </script>
 
