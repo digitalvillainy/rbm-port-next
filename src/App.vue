@@ -1,6 +1,7 @@
 <template>
   <div class="h-screen bg-gradient-to-b from-primary-darker via-primary to-primary-light">
     <NavBar/>
+
   </div>
 </template>
 
