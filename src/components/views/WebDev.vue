@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-row justify-between mt-24">
+  <section class="flex flex-row justify-between mt-36">
     <div class="bg-white rounded-xl bg-opacity-20 p-5 m-4 w-2/6 flex flex-col justify-center">
       <div>
         <h4 class="text-2xl text-rbm-red font-bold">

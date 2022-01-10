@@ -1,12 +1,14 @@
 <template>
   <div class="flex flex-row justify-between">
-    <rbm-logo-title class="h-32 w-32 ml-6 -mt-4"/>
+    <rbm-logo-title class="h-32 w-32 ml-6 -mt-4 cursor-pointer"
+                    @click="$emit('change-view', 'main')"/>
     <!--  Mobile navigation  -->
     <div v-if="!hideNav" class="p-5 xl:hidden">
       <svg xmlns="http://www.w3.org/2000/svg"
            class="fill-current text-white h-8 w-8 hover:text-rbm-red cursor-pointer"
            @click="toggleBurger"
-           viewBox="0 0 20 20">
+           viewBox="0 0 20 20"
+      >
         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
       </svg>
     </div>
@@ -15,22 +17,29 @@
         <li class="flex flex-row justify-end" @click="toggleBurger">
           <svg xmlns="http://www.w3.org/2000/svg"
                class="fill-current text-white h-8 w-8 hover:text-rbm-red cursor-pointer"
-               viewBox="0 0 20 20">
+               viewBox="0 0 20 20"
+          >
             <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071
-                       1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
+                       1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+            />
           </svg>
         </li>
-        <li class="text-white text-2xl border-b-4 border-white text-right select-none
-                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer my-2 self-end">
+        <li @click="$emit('change-view', 'WebDev')"
+            class="text-white text-2xl border-b-4 border-white text-right select-none
+                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer my-2 self-end"
+        >
           Web Development
         </li>
-        <li class="text-white text-2xl border-b-4 border-white text-right select-none
-                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-6/12 my-2 self-end">
+        <li @click="$emit('change-view', 'Freelancing')"
+            class="text-white text-2xl border-b-4 border-white text-right select-none
+                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-6/12 my-2 self-end"
+        >
           Freelancing
         </li>
         <li class="text-white text-2xl border-b-4 border-white text-right select-none
                      hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-6/12 my-2 self-end"
-            @click="toggleContact">
+            @click="toggleContact"
+        >
           Contact Us
         </li>
       </ul>
@@ -44,17 +53,22 @@
     <!--  Desktop navigation  -->
     <div class="xl:flex flex-col hidden">
       <ul class="flex xl:flex-row pl-4 py-4 pr-2">
-        <li class="text-white text-2xl border-b-4 border-white text-center self-center select-none
-                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer my-2 w-52 self-end">
+        <li @click="$emit('change-view', 'WebDev')"
+            class="text-white text-2xl border-b-4 border-white text-center self-center select-none
+                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer my-2 w-52 self-end"
+        >
           Web Development
         </li>
-        <li class="text-white text-2xl border-b-4 border-white text-center self-center select-none
-                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-32 my-2 self-end">
+        <li @click="$emit('change-view', 'Freelancing')"
+            class="text-white text-2xl border-b-4 border-white text-center self-center select-none
+                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-32 my-2 self-end"
+        >
           Freelancing
         </li>
         <li @click="toggleContact"
             class="text-white text-2xl border-b-4 border-white text-center self-center select-none
-                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-32 my-2 self-end">
+                     hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-32 my-2 self-end"
+        >
           Contact Us
         </li>
       </ul>
@@ -75,6 +89,7 @@ import EnvelopeIcon from '@/components/icons/EnvelopeIcon';
 import TwitterIcon from '@/components/icons/TwitterIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import GithubIcon from '@/components/icons/GithubIcon';
+
 export default {
   name: "NavBar",
   components: {
