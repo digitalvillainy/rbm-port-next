@@ -6,16 +6,21 @@
     <transition name="slide-fade">
       <WebDev class="z-50 top-0 absolute" v-if="current === 'WebDev'"/>
     </transition>
+    <transition name="slide-fade">
+      <Freelancing class="z-50 top-0 absolute" v-if="current === 'Freelancing'"/>
+    </transition>
   </section>
 </template>
 
 <script>
 import HeroContent from '@/components/views/HeroContent';
 import WebDev from '@/components/views/WebDev';
+import Freelancing from '@/components/views/Freelancing';
 
 export default {
   name: "MainContent",
   components: {
+    Freelancing,
     HeroContent,
     WebDev
   },

@@ -1,7 +1,8 @@
 <template>
   <div class="flex flex-row justify-between">
     <rbm-logo-title class="h-32 w-32 ml-6 -mt-4 cursor-pointer"
-                    @click="$emit('change-view', 'main')"/>
+                    @click="$emit('change-view', 'main')"
+    />
     <!--  Mobile navigation  -->
     <div v-if="!hideNav" class="p-5 xl:hidden">
       <svg xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +48,9 @@
         <EnvelopeIcon class="mx-1 h-6 w-6"/>
         <TwitterIcon class="mx-1 h-6 w-6"/>
         <LinkedinIcon class="mx-1 h-6 w-6"/>
-        <GithubIcon class="mx-1 h-6 w-6"/>
+        <a href="https://github.com/digitalvillainy" target="_blank" class="cursor-pointer">
+          <GithubIcon class="mx-1 h-6 w-6"/>
+        </a>
       </div>
     </div>
     <!--  Desktop navigation  -->
@@ -76,7 +79,9 @@
         <EnvelopeIcon class="mx-1 h-6 w-6"/>
         <TwitterIcon class="mx-1 h-6 w-6"/>
         <LinkedinIcon class="mx-1 h-6 w-6"/>
-        <GithubIcon class="mx-1 h-6 w-6"/>
+        <a href="https://github.com/digitalvillainy" target="_blank" class="cursor-pointer">
+          <GithubIcon class="mx-1 h-6 w-6"/>
+        </a>
       </div>
     </div>
   </div>
