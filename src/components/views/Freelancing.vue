@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-row justify-between mt-36">
+  <section class="flex flex-row justify-between">
     <div class="bg-white rounded-xl bg-opacity-20 px-5 pb-5 pt-10 m-4 w-2/6 flex flex-col justify-between">
       <div>
         <h4 class="text-2xl text-rbm-red font-bold">
@@ -13,7 +13,7 @@
           These are the open-source technologies, that we use for all of our projects. Don't see something that you're
           company uses?
         </p>
-        <p class="text-white mt-4">Feel free to contact us as we are learning new technology everyday and maybe able to
+        <p class="text-white mt-4">Feel free to contact us as we are learning new technologies everyday and maybe able to
           help.
         </p>
       </div>
