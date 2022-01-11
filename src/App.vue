@@ -1,4 +1,6 @@
 <template>
+
+<!-- TODO: Implement Vue router -->
   <div class="min-h-screen overflow-x-hidden bg-gradient-to-b from-primary-darker via-primary to-primary-light">
     <NavBar @change-view="changePage"/>
     <MainContent :current="page"/>
@@ -23,7 +25,12 @@ export default {
   methods: {
     changePage(view) {
       console.log(view);
-      this.page = view;
+      if (view !== 'main') {
+        window.location.pathname = view;
+        this.page = view;
+      } else {
+        this.page = view;
+      }
     }
   }
 }

@@ -25,13 +25,13 @@
             />
           </svg>
         </li>
-        <li @click="$emit('change-view', 'WebDev')"
+        <li @click="$emit('change-view', 'web-development')"
             class="text-white text-2xl border-b-4 border-white text-right select-none
                      hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer my-2 self-end"
         >
           Web Development
         </li>
-        <li @click="$emit('change-view', 'Freelancing')"
+        <li @click="$emit('change-view', 'freelancing')"
             class="text-white text-2xl border-b-4 border-white text-right select-none
                      hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-6/12 my-2 self-end"
         >
@@ -56,13 +56,13 @@
     <!--  Desktop navigation  -->
     <div class="xl:flex flex-col hidden">
       <ul class="flex xl:flex-row pl-4 py-4 pr-2">
-        <li @click="$emit('change-view', 'WebDev')"
+        <li @click="$emit('change-view', 'web-development')"
             class="text-white text-2xl border-b-4 border-white text-center self-center select-none
                      hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer my-2 w-52 self-end"
         >
           Web Development
         </li>
-        <li @click="$emit('change-view', 'Freelancing')"
+        <li @click="$emit('change-view', 'freelancing')"
             class="text-white text-2xl border-b-4 border-white text-center self-center select-none
                      hover:text-rbm-red hover:border-rbm-red mx-2 cursor-pointer w-32 my-2 self-end"
         >

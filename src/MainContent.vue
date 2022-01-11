@@ -4,10 +4,10 @@
       <HeroContent v-if="current === 'main'"/>
     </transition>
     <transition name="slide-fade">
-      <WebDev class="z-50 top-0 absolute" v-if="current === 'WebDev'"/>
+      <WebDev class="z-50 top-0 absolute" v-if="current === 'web-development'"/>
     </transition>
     <transition name="slide-fade">
-      <Freelancing class="z-50 top-0 absolute" v-if="current === 'Freelancing'"/>
+      <Freelancing class="z-50 top-0 absolute" v-if="current === 'freelancing'"/>
     </transition>
   </section>
 </template>
@@ -25,8 +25,8 @@ export default {
     WebDev
   },
   props: ['current'],
-  mounted() {
-    console.log(this.current);
+  beforeMount() {
+    console.log(window.location);
   }
 }
 </script>
