@@ -1,5 +1,5 @@
 <template>
-  <section class="relative">
+  <section class="relative w-9/12 mx-auto">
     <transition name="slide-fade">
       <HeroContent v-if="current === 'main'"/>
     </transition>

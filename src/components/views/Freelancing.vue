@@ -1,13 +1,20 @@
 <template>
   <section class="flex flex-row justify-between mt-36">
-    <div class="bg-white rounded-xl bg-opacity-20 p-5 m-4 w-2/6 flex flex-col justify-center">
+    <div class="bg-white rounded-xl bg-opacity-20 px-5 pb-5 pt-10 m-4 w-2/6 flex flex-col justify-between">
       <div>
         <h4 class="text-2xl text-rbm-red font-bold">
           Full Stack Freelancing
         </h4>
-        <p class="text-white mt-14">
+        <p class="text-white mt-7">
           Looking to augment your currently existing project/team quickly?
           Hire us to jump in and work for you.
+        </p>
+        <p class="text-white mt-4">
+          These are the open-source technologies, that we use for all of our projects. Don't see something that you're
+          company uses?
+        </p>
+        <p class="text-white mt-4">Feel free to contact us as we are learning new technology everyday and maybe able to
+          help.
         </p>
       </div>
       <FreeStackFreelancing class="h-64 w-64 self-center"/>
@@ -62,23 +69,23 @@
       </div>
     </div>
 
-    <div class="bg-white rounded-xl bg-opacity-20 p-5 m-4 w-2/6 flex flex-col justify-center">
-      <div class="flex flex-col justify-center">
+    <div class="bg-white rounded-xl bg-opacity-20 px-5 pb-5 pt-10 m-4 w-2/6 flex flex-col justify-between">
+      <div class="flex flex-col justify-start">
         <h4 class="text-2xl text-rbm-red text-center font-bold">
           Back-End Development
         </h4>
         <BackEndDev class="h-64 w-64 self-center align-top"/>
       </div>
-      <div class="flex flex-col mx-auto w-3/5">
-        <div class="flex flex-row justify-between place-items-end my-4">
-          <php-icon/>
-          <MysqlIcon/>
-          <NodeIcon/>
+      <div class="flex flex-col">
+        <div class="flex flex-row justify-between place-items-center">
+          <php-icon class="h-20 w-20"/>
+          <MysqlIcon class="h-20 w-20"/>
+          <NodeIcon class="h-20 w-20"/>
         </div>
         <div class="flex flex-row justify-between place-items-end my-4">
-          <LaravelIcon/>
-          <ExpressIcon/>
-          <BashIcon/>
+          <LaravelIcon class="h-20 w-20"/>
+          <ExpressIcon class="h-20 w-20"/>
+          <BashIcon class="h-20 w-20"/>
         </div>
 
 
